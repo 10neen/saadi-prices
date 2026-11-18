@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* خلفية دافئة ومضيئة تفتح النفس للشراء */
+    background: radial-gradient(circle at top, #2b1d14 0%, #0d0a08 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: rtl;
+    padding: 10px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 420px;
+    background: linear-gradient(160deg, rgba(35, 28, 23, 0.95) 0%, rgba(15, 12, 10, 0.98) 100%);
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), inset 0 1px 2px rgba(255, 215, 140, 0.25);
+    border: 1.5px solid rgba(212, 143, 56, 0.4);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-frame {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 2.5px;
+    background: linear-gradient(145deg, #ffb74d 0%, #5c3a21 100%);
+    box-shadow: 0 4px 15px rgba(255, 183, 77, 0.4);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.store-logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.app-header h1 {
+    color: #ffb74d;
+    font-size: 22px;
+    font-weight: 800;
+    text-shadow: 0 0 15px rgba(255, 183, 77, 0.4);
+}
+
+.app-header p {
+    color: #c2b2a2;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.date-badge {
+    margin-top: 8px;
+    background: rgba(255, 183, 77, 0.15);
+    border: 1px solid rgba(255, 183, 77, 0.4);
+    color: #ffecb3;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.prices-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 340px;
+    overflow-y: auto;
+    padding: 2px;
+}
+
+.price-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(255, 183, 77, 0.3);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.item-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.item-note {
+    font-size: 10px;
+    color: #b5a494;
+}
+
+.item-price {
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffb74d;
+    background: rgba(255, 183, 77, 0.12);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 183, 77, 0.3);
+    white-space: nowrap;
+}
+
+.app-footer {
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.back-home-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(24, 119, 242, 0.9) 0%, rgba(0, 130, 230, 0.9) 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease;
+}
+
+.back-home-btn:hover {
+    filter: brightness(1.1);
+}
